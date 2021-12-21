@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">  
+// Program Name: Favourite Country
+// Program Description: Ask the user to enter their favourite countries and the capital of that country. 
+// Save the countries in one array and the Capital of that Country in another array. Ask for five favourite Countries. 
+// Then ask the user for one of their most favourite country. Find the Capital of that Country and display it to the screen.
+
+// Name: Amos Johnson
+// Date: 11/30/2021
+
+    // declare variables
+    var SIZE = 5;
+    var size = 1;
+
+    var country = new Array (SIZE);
+    var countryCap = new Array (SIZE);
+    var countryFav = new Array (size);
+    var selectFav;
+    var br = "<br />"
+
+    // for loop asking the user which countries (along with their capital) are their favourite
+    for (var i=0; i<SIZE; i++) {
+        country[i] = prompt("Enter Country #" + (i + 1) + " out of Five of your favourite countries you like/would like to visit");
+        countryCap[i] = prompt("Enter the capital of this country");
+    }
+    
+    countryFav = prompt("Which of the countries you entered is your most favourite");
+    
+    // for loop ensuring that one of the countries inputted matches witht the 'favourite country' prompt
+    for (var i=0; i<SIZE; i++) {
+        
+            if (country[i] == countryFav) {
+                found = true;
+                document.write("The country that is your most favourite is...");
+                document.write("<h2>" + country[i] + ", " + countryCap[i] + "<h2>" + br);
+            }  
+
+    }
+</script>
+</body>
+</html>

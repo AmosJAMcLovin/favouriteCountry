@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript"> 
+// Program Name: Favourite TV Shows (Countries)
+// Program Description: Ask the user to enter Five of their favourite countries they like to visit. 
+// Once they have entered the countries, display the results. Use an array to store their favourite countries.
+
+// Name: Amos Johnson
+// Date: 11/30/2021
+
+//declare variables 
+var SIZE = 5;
+
+var country = new Array (SIZE);
+var br = "<br />"
+
+// for loop asking the user which countries are their favourite
+for (var i=0; i<SIZE; i++) {
+    country[i] = prompt("Enter Country #" + (i + 1) + " out of Five of your favourite countries you like/would like to visit");
+}
+
+// displaying the users favourite countries
+document.write("The countries listed are...");
+
+for (var i=0; i<SIZE; i++) {
+    document.write("<h2>" + country[i] + "<h2>" + br);
+}
+
+</script>
+</body>
+</html>
